@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        body{
+            background: url("{% static 'menu2.jpg' %}") center/cover fixed no-repeat;
+            background-attachment: fixed;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: left;
+            gap: 40px;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: auto;
+            align-items: start;
+            
+        }
+        .category{
+            display: flex;
+            flex-wrap: wrap;
+            background: rgba(252, 248, 29, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 4px 25px rgba(255, 215, 0, 0.25);
+            color: #fed72c; 
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: #EAEAEA;
+            margin: auto;
+            justify-items: left;
+            width: 700px;
+        
+        }
+        .header{
+            text-align: center;
+            padding: 40px 20px 10px;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>✨ Celeste Dining ✨</h1>
+        <p>Where Every Bite Feels Divine</p>
+    </header>
+
+    <div class="container">
+        <div class="category">
+            <h3>>🌠 Starters — Cosmic Beginnings</h3>
+            <ul>
+                <li>Mini Idli Nebula..........Rs. 75</li>
+                <li>Galaxy Medu Vada..........Rs. 20</li>
+                <li>Paneer 65 Comet Crust.....Rs. 150</li>
+                <li>Solar Masala Dosa Rolls...Rs. 125</li>
+                <li>Parotta...................Rs. 75</li>
+                <li>Chola Puri................Rs. 85</li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3>🌕 Main Course — Celestial Classics</h3>
+            <ul>
+                <li>Mysore Moon Dosa..........Rs. 85</li>
+                <li>The Celeste Meals.........Rs. 120</li>
+                <li>Starfire Chicken Biryani...Rs. 225</li>
+                <li>Starlit fried rice.........Rs. 150</li>
+            </ul>
+        </div>
+        <div class="category">
+            <h3>🌿 Sides & Desserts — Stellar Companions</h3>
+            <ul>
+                <li>Elaneer Payasam............Rs. 50</li>
+                <li>Kesari Bath................Rs. 65</li>
+                <li>Mysore Pak.................Rs. 45</li>
+                <li>Rose Falooda...............Rs. 55</li>
+                <li>Vanilla Milkshake..........Rs. 30</li>
+                <li>Chocolate Pudding..........Rs. 67</li>
+                <li>Nutela Waffle..............Rs. 70</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

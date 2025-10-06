@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book table</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, #051937, #00224e, #00356b, #0b486b);
+            background-attachment: fixed;
+            font-family: 'Georgia', serif;
+            color: #fffbea;
+        }
+        .header{
+            text-align: center;
+            padding: 50px 20px 20px;
+            color: #fad91f;
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            display: flex;
+            background: rgba(253, 230, 28, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            border-radius: 20px;
+            box-shadow: 0 4px 25px rgba(255, 215, 0, 0.25);
+            padding: 30px;
+            width: 450px;
+            text-align: left;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            border-radius: 10px;
+            padding: 20px;
+            font-size: large;
+            background: rgba(23, 22, 22,0.3);
+            color: #fff;
+        }
+        button{
+            padding: 15px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #ffd700, #f4e37c);
+            color: #00224e;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="book-header">
+        <h1>✨ Reserve Your Celestial Experience ✨</h1>
+        <p>Book your table under the golden glow of the stars at Celeste Dining.</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <form>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email id" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" placeholder="Enter number of guests" required>
+
+                <label for="date">Select Date</label>
+                <input type="date" id="date" placeholder="Enter Date" required>
+
+                <label for="time">Select Time</label>
+                <input type="time" id="time" placeholder="Enter Time" required>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        body{
+            background: radial-gradient(#EAEAEA,#152C4D,#0A1931);
+        }
+        .header{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 15px 30px;
+            border-bottom: 2px solid #ddd
+        }
+
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+        }
+        .logo h1{
+            color:#C9A043;
+            font-size: 60px;
+        }
+
+        .logo img{
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .links{
+            display: flex;
+            gap: 20px;
+            font-size: 35px;
+            justify-content: center;
+            margin: auto;
+            width: auto;
+            padding: 15px 0;
+            
+
+        }
+
+        .links a{
+            background: radial-gradient( #EAEAEA,#C9A043 );
+            padding: 8px 15px;
+            border-radius: 20px;
+            
+            
+
+        }
+        .cards{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+
+
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            background: radial-gradient(#C9A043, #C9A043,#EAEAEA)  ;
+            height: auto;
+            width: 450px;
+            border-radius: 20px;
+            align-items: center;
+            align-items: justify;
+            box-shadow:#EAEAEA;
+        }
+        .offer{
+            background: url("{% static 'donuts.jpg' %}") center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            text-align: center;
+            position: relative;
+            border-radius: 20px;
+            
+        }
+        .offer h2{
+            font-size: 60px;
+            color: #070707;
+        }
+        .offer p{
+            font-size: 40px;
+            color: #0e0d0d;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="{% static 'mylogo.png' %}" width="150px" height="150px">
+            <h1>Celeste Dining</h1>
+        </div>
+        <br>
+        <div class="links">
+            <a href="{% url 'web' %}">Home</a>
+            <a href="{% url 'menu' %}">Menu</a>
+            <a href="{% url 'admins' %}">Administration</a>
+            <a href="{% url 'contact' %}">Contact us</a>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="offer">
+        <div class="offer-text">
+            <h2>50% off this Weekend!</h2>
+            <p>"Half the Price, Double the Cosmic Delight! 50% Off for a Limited Time."</p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Our new menu</h3>
+            <img src="{% static 'hotel.png' %}" width="300px" height="300px">
+            <p>A Stellar Culinary Journey Awaits!
+We are thrilled to unveil the New Menu at CelesteDining, perfectly tailored to elevate your evening under the stars.
+
+Our chefs have crafted a selection of dishes that are as inspired and wondrous as the cosmos itself. Explore Celestial Starters, discover Planetary Plates featuring locally sourced ingredients, and finish your experience with our dazzling array of Galaxy Desserts.
+
+Every dish is a tribute to the magic of the night sky, promising a dining experience that is truly out of this world.
+
+Join us and make your next meal a star-studded event!
+
+</p>
+            <a href="{% url 'menu' %}">See our new menu!</a>
+        </div>
+        <div class="card">
+            <h3>Book a Table</h3>
+            <img src="{% static 'booktable.png' %}" width="300px" height="300px">
+            <p>Reserve Your Stellar Experience at CelesteDining!
+Ready for a dinner under the stars?
+
+Booking your table at CelesteDining is the first step to an unforgettable culinary journey. With our unique celestial-themed ambiance and a menu of exquisite dishes, we promise an evening that is truly out of this world.
+
+To ensure you secure your preferred date and time, we recommend making your reservation in advance, especially for weekend evenings.
+
+Book your table now and prepare for a stellar night!
+
+</p>
+            <a href="{% url 'booktable' %}">Book your table now></a>
+        </div>
+        <div class="card">
+            <h3>Opening hours</h3>
+            <img src="{% static 'opening.png' %}" width="300px" height="300px">
+            <p>Your Invitation to Dine Under the Stars!
+We are ready to welcome you to CelesteDining.
+
+Our Current Opening Hours Are:</p>
+
+<p>Monday - Thursday	5:00 PM - 10:00 PM</p>
+<p>Friday - Saturday	5:00 PM - 11:00 PM</p>
+<p>Sunday - 4:00 PM - 11:00 PM</p>
+
+<p>Join us for an evening of stellar cuisine and an unforgettable cosmic atmosphere.
+
+We look forward to serving you soon!</p>
+
+            
+
+        </div>
+    </div>
+    <div class="last">
+        <p>Designed and Developed by <a href="#">V HARINI</a></p>
+
+    </div>
+    
+</body>
+</html>

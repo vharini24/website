@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, #b9cce7, #75a9ee, #4692de, #2798da);
+            background-attachment: fixed;
+            font-family: 'Georgia', serif;
+            color: #fffbea;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+        .cards{
+            background: rgba(3, 13, 31, 0.15);
+            border-radius: 20px;
+            box-shadow: 0 4px 25px rgba(255, 215, 0, 0.25);
+            text-align: center;
+            width: 280px;
+            padding: 20px;
+            color: #fffbea;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+
+
+        }
+        .header{
+            text-align: center;
+            padding: 50px 20px 30px;
+            color: #ffd700;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="admin-header">
+    <h1>✨ Celeste Dining Administration ✨</h1>
+    <p>Meet the brilliant minds and guiding stars behind our celestial dining experience.</p>
+    </header>
+
+    <div class="container">
+        <div class="cards">
+            <h3>FOUNDER & CEO - HARINI</h3>
+            <img src="{% static 'ceo.png' %}" width="300px" height="300px">
+            <p>Visionary behind Celeste Dining, blending cosmic elegance with authentic South Indian flavors.
+Oversees the restaurant’s concept, brand, and long-term strategy.</p>
+        </div>
+        <div class="cards">
+            <h3>GENERAL MANAGER - JAYASURIYAA</h3>
+            <img src="{% static 'manager.png' %}" width="300px" height="300px">
+            <p>Ensures seamless restaurant operations and an exceptional guest experience.
+Manages staff, finances, and daily operations.</p>
+        </div>
+        <div class="cards">
+            <h3>EXECUTIVE CHEF - ASVIKA</h3>
+            <img src="{% static 'chef.png' %}" width="300px" height="300px">
+            <p>Crafts each dish with artistry inspired by the stars.
+Heads the culinary team, curates the menu, and maintains quality.</p>
+        </div>
+        <div class="cards">
+            <h3>FINANCE & OPERATIONS HEAD - JYOTSNA</h3>
+            <img src="{% static 'finance.png' %}" width="300px" height="300px">
+            <p>Balances the books and brings order to the celestial chaos.
+Handles budgeting, payroll, and vendor relations</p>
+        </div>
+        <div class="cards">
+            <h3>MARKETING & PUBLIC RELATIONS MANAGER - DIYA</h3>
+            <img src="{% static 'marketing.png' %}" width="300px" height="300px">
+            <p>Spreads the word of Celeste Dining’s glow far and wide.
+Oversees social media, branding, and promotional campaigns</p>
+        </div>
+        <div class="cards">
+            <h3>HR & TRAINING MANAGER - HARITA</h3>
+            <img src="{% static 'hr.png' %}" width="300px" height="300px">
+            <p>Keeps the Celeste family shining bright through guidance and care.
+Recruits, trains, and supports staff for excellence in service</p>
+        </div>
+
+    
+</body>
+</html>
